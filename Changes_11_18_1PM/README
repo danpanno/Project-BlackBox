@@ -1,0 +1,6 @@
+1. In meshes folder, delete all free files (files not in a folder) EXCEPT for conveyor_belt.stl
+2. Replace conveyor belt urdf file
+3. Replace launch file
+4. Delete the conveyor belt folder in catkin_adam -> src
+
+I got rid of all things conveyor belt except for what was necessary (the model and its mesh).  
