@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="tennisball">
+
+<link name="tennisball_link">
+
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ur_description/meshes/balls/tennisball.dae" scale="0.03 0.03 0.03"/>
+    </geometry>
+  </collision>
+
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://ur_description/meshes/balls/tennisball.dae" scale="0.03 0.03 0.03"/>
+    </geometry>
+  </visual>
+
+  <inertial>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <mass value="0.0577" />
+   radius = 0.0686
+   <inertia
+      ixx="0.00018102" ixy="0.00018102"  ixz="0.00018102"
+      iyy="0.00018102" iyz="0.00018102"  izz="0.00018102" />
+  </inertial>
+
+</link>
+
+<gazebo reference="tennisball_link">
+  <mu1>100</mu1>
+  <mu2>100</mu2>
+  <kp>2147483647</kp>
+  <kd>1</kd>
+  <maxVel>100</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+
+</robot>
